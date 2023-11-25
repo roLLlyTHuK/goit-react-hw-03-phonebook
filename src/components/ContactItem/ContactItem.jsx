@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListItem, Button, Span } from './ContactItem.styled';
+import { ListItem, Button, Span, NumberSpan } from './ContactItem.styled';
 
 export const ContactItem = ({ contact, onDelete }) => {
   const handleDelete = () => {
@@ -9,7 +9,7 @@ export const ContactItem = ({ contact, onDelete }) => {
   return (
     <ListItem>
       <Span>{contact.name}: </Span>
-      {contact.number}
+      <NumberSpan>{contact.number}</NumberSpan>
       <Button onClick={handleDelete}>Delete</Button>
     </ListItem>
   );

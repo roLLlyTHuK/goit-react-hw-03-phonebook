@@ -12,6 +12,9 @@ const ListItem = styled.li`
 const Span = styled.span`
   width: 150px;
 `;
+const NumberSpan = styled.span`
+  width: 100px;
+`;
 
 const Button = styled.button`
   /* width: 60px; */
@@ -19,4 +22,4 @@ const Button = styled.button`
   border: 1px solid black;
 `;
 
-export { ListItem, Button, Span };
+export { ListItem, Button, Span, NumberSpan };
